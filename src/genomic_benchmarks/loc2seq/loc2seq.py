@@ -76,8 +76,8 @@ def download_dataset(
             if 'id' not in dt.columns:
                 print("The DataFrame does not contain the 'id' column. Available columns are: " + ", ".join(dt.columns))
                 dt.index.name = 'id'
-                df = df.reset_index()
-                print(df.head())
+                dt = dt.reset_index()
+                print(dt.head())
             for row in dt.iterrows():
                 print(row)
                 row_filename = folder_filename / (str(row[1]["id"]) + ".txt")
