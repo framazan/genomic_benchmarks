@@ -45,6 +45,7 @@ def download_dataset(
     """
 
     interval_list_dataset = _guess_location(interval_list_dataset, local_repo)
+    print(interval_list_dataset)
     metadata = _check_dataset_existence(interval_list_dataset, version, local_repo)
     dataset_name = _get_dataset_name(interval_list_dataset)
 
@@ -79,7 +80,6 @@ def download_dataset(
                 dt = dt.reset_index()
                 print(dt.head())
             for row in dt.iterrows():
-                print(row)
                 row_filename = folder_filename / (str(row[1]["id"]) + ".txt")
                 row_filename.write_text(row[1]["seq"])
 
