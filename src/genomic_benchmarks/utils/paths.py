@@ -9,4 +9,4 @@ REF_CACHE_PATH = CACHE_PATH / "fasta"
 # where the interval datasets are stored (if read from local)
 DATASET_DIR_PATH = (Path(__file__).parents[0] / ".." / ".." / ".." / "datasets").resolve()
 # where the interval datasets are stored (if read from the internet)
-DATASET_URL_PATH = URL("http://raw.githubusercontent.com/ML-Bioinfo-CEITEC/genomic_benchmarks/main/datasets/")
+DATASET_URL_PATH = URL("https://raw.githubusercontent.com/framazan/genomic_benchmarks/main/datasets")
