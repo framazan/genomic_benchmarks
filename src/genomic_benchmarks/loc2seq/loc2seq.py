@@ -71,6 +71,11 @@ def download_dataset(
 
             folder_filename = Path(dest_path) / dataset_name / t / c
             _remove_and_create(folder_filename)
+
+            # Ensure 'id' column exists or use the correct column name
+            if 'id' not in dt.columns:
+                print("The DataFrame does not contain the 'id' column. Available columns are: " + ", ".join(dt.columns))
+                dt = dt.rename_axis("id")
             for row in dt.iterrows():
                 row_filename = folder_filename / (str(row[1]["id"]) + ".txt")
                 row_filename.write_text(row[1]["seq"])
