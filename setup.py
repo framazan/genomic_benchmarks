@@ -5,15 +5,15 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="genomic_benchmarks",
-    version="0.0.9",
+    version="0.1.7",
     description="Genomic Benchmarks",
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="RBP Bioinformatics",
-    author_email="ML.Bioinfo.CEITEC@gmail.com",
+    author_email="ramazan.filip@gmail.com",
     license="Apache License 2.0",
     keywords=["bioinformatics", "genomics", "data"],
-    url="https://github.com/ML-Bioinfo-CEITEC/genomic_benchmarks",
+    url="https://github.com/framazan/genomic_benchmarks",
     packages=find_packages("src"),
     package_dir={"": "src"},
     scripts=[],
