@@ -1,0 +1,8 @@
+classes:
+  negative:
+    type: fa.gz
+    url: https://raw.githubusercontent.com/framazan/files/master/Athaliana_167_TAIR9.fa.gz
+  positive:
+    type: fa.gz
+    url: https://raw.githubusercontent.com/framazan/files/master/Athaliana_167_TAIR9.fa.gz
+version: 0
